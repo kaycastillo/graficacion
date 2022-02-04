@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Algoritmo Basico</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="leftC">
+            <canvas id="canvas" width="500" height="500"></canvas><br>
+            <input type="color" id="color" oninput="defColor(this.value);">
+            <input type="range" id="grosor" oninput="defGrosor(this.value);" min="1" max="5" value="1">
+            <button onclick="Limpiar();">Limpiar</button>
+            <script src="js/app.js"></script>
+        </div>
+
+        <div class="tools-container">
+            <div class="tools">
+                <input type="radio" id="lapiz" name="tool" value="lapiz" checked="true" onclick="handleTool(this);"><label for="lapiz"><span>Lápiz</span></label><br>
+                <input type="radio" id="linea" name="tool" value="linea" onclick="handleTool(this);"><label for="linea">Linea</label><br>  
+            </div>      
+        </div>
+        
+    </div>  
+</body>
+</html>
